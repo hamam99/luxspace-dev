@@ -9,7 +9,7 @@ import Sitemap from '../parts/HomePage/Sitemap'
 function HomePage() {
   return (
     <>
-      <Header />
+      <Header theme={'white'} position={'absolute'} />
       <Hero />
       <BrowseRoom />
       <JustArrived />
