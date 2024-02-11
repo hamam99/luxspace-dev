@@ -1,21 +1,14 @@
+import HomePage from './pages/HomePage'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
 function App() {
   return (
-    <div className="App bg-red-50">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="bg-red-500"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App w-screen h-screen">
+      <Router>
+        <Route path="/" component={HomePage} />
+      </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
