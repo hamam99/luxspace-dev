@@ -4,6 +4,9 @@ import Footer from '../parts/Footer'
 import Header from '../parts/Header'
 import Hero from '../parts/Hero'
 import Sitemap from '../parts/HomePage/Sitemap'
+import ProductDetails from './Details/ProductDetails'
+import { withRouter } from 'react-router'
+import Suggestion from './Details/Suggestion'
 
 function Details() {
   return (
@@ -17,6 +20,8 @@ function Details() {
         ]}
       />
 
+      <ProductDetails />
+      <Suggestion />
       <Clients />
       <Sitemap />
       <Footer />
@@ -24,4 +29,4 @@ function Details() {
   )
 }
 
-export default Details
+export default withRouter(Details)

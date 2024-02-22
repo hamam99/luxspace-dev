@@ -1,15 +1,17 @@
 import Details from './pages/Details'
 import HomePage from './pages/HomePage'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App w-screen h-screen">
-      <Router>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/categories/:idc" component={Details} />
-      </Router>
-    </div>
+    <Router>
+      <div className="App w-screen h-screen">
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/categories/:idc" component={Details} />
+        </Switch>
+      </div>
+    </Router>
   )
 }
 
